@@ -12,8 +12,7 @@ namespace DbService
 		static void Main(string[] args)
 		{
 
-			using(var host = new ServiceHost(typeof(DbAccess.UsersService)))
-			{
+			using(var host = new ServiceHost(typeof(DbAccess.UsersService))) {
 				host.Open();
 				Console.WriteLine("Host started @ " + DateTime.Now.ToString());
 				Console.ReadLine();

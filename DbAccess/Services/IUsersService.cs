@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace DbAccess
+namespace DbAccess.Services
 {
 	[ServiceContract]
 	public interface IUsersService

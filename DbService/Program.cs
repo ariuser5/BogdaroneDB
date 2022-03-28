@@ -11,11 +11,22 @@ namespace DbService
 	{
 		static void Main(string[] args)
 		{
+			using(var context = new DbAccess.BogdaroneDbContext()) {
+				var user = new DbAccess.User()
+				{
+					Name = "admin",
+					Password = "admin"
+				};
 
-			using(var host = new ServiceHost(typeof(DbAccess.UsersService))) {
+				//context.Users.Add(user);
+				//context.SaveChanges();
+			}
+
+			using(var host = new ServiceHost(typeof(DbAccess.Services.UsersService))) {
 				host.Open();
 				Console.WriteLine("Host started @ " + DateTime.Now.ToString());
 				Console.ReadLine();
+				host.Close();
 			}
 
 		}

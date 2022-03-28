@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbAccess", "DbAccess\DbAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbService", "DbService\DbService.csproj", "{40CFAB5F-B0AB-4376-A4C0-CDA9A8AB4609}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequestExperiment", "HttpRequestExperiment\HttpRequestExperiment.csproj", "{2953785C-3580-4419-ABE2-D8BF697C6E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpRequestExperiment", "HttpRequestExperiment\HttpRequestExperiment.csproj", "{2953785C-3580-4419-ABE2-D8BF697C6E53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbServiceTestClient", "DbServiceTestClient\DbServiceTestClient.csproj", "{E7B3D260-258A-4590-9308-BB2A82AE08AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2953785C-3580-4419-ABE2-D8BF697C6E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2953785C-3580-4419-ABE2-D8BF697C6E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2953785C-3580-4419-ABE2-D8BF697C6E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B3D260-258A-4590-9308-BB2A82AE08AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B3D260-258A-4590-9308-BB2A82AE08AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B3D260-258A-4590-9308-BB2A82AE08AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B3D260-258A-4590-9308-BB2A82AE08AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

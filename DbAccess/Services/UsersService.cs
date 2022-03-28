@@ -9,20 +9,21 @@ namespace DbAccess.Services
 {
 	public class UsersService: IUsersService
 	{
-		public string GetData(int value)
+		public IEnumerable<User> Read(string username)
 		{
-			return string.Format("You entered: {0}", value);
-		}
+			using(var context = new BogdaroneDbContext()) {
+				//var user = new User()
+				//{
+				//	Name = "admin",
+				//	Password = "admin"
+				//};
 
-		public CompositeType GetDataUsingDataContract(CompositeType composite)
-		{
-			if(composite == null) {
-				throw new ArgumentNullException("composite");
+
+				return context.Users.ToArray();
+
+				//context.Users.Add(user);
+				//context.SaveChanges();
 			}
-			if(composite.BoolValue) {
-				composite.StringValue += "Suffix";
-			}
-			return composite;
 		}
 	}
 }

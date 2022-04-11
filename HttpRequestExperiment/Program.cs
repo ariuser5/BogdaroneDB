@@ -32,7 +32,7 @@ namespace HttpRequestExperiment
 			//	requestUri: "https://api.github.com/orgs/dotnet/repos");
 
 			var responseTask = client.GetAsync(
-				requestUri: "http://localhost:8080/");
+				requestUri: "http://localhost:8080/ReadUsers/");
 
 			var msg = (string)null;
 

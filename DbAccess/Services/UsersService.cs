@@ -9,7 +9,7 @@ namespace DbAccess.Services
 {
 	public class UsersService: IUsersService
 	{
-		public IEnumerable<User> Read(string username)
+		public IEnumerable<User> Read(/*string username*/)
 		{
 			using(var context = new BogdaroneDbContext()) {
 				//var user = new User()
